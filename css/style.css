@@ -11,3 +11,47 @@
         Black:               #000
         blue:               rgba(40, 103, 222, 0.8)
 ============================================ */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    color: #212226;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+}
+strong
+{
+    font-weight: 700;
+}
+
+section {
+    background: #fff;
+    overflow: hidden;
+}
+/* =========================================
+                Content Boxes
+============================================ */
+
+.content-box-lg {
+    padding: 120px 0;
+}
+.content-box-md {
+    padding:100px 0;
+}
