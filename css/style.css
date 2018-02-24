@@ -12,8 +12,7 @@
         blue:               rgba(40, 103, 222, 0.8)
 ============================================ */
 
-html,
-body {
+html, body {
     height: 100%;
 }
 
@@ -21,12 +20,7 @@ body {
     color: #212226;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway", sans-serif;
 }
 
@@ -36,8 +30,8 @@ p {
     font-weight: 400;
     line-height: 24px;
 }
-strong
-{
+
+strong {
     font-weight: 700;
 }
 
@@ -45,6 +39,7 @@ section {
     background: #fff;
     overflow: hidden;
 }
+
 /* =========================================
                 Content Boxes
 ============================================ */
@@ -52,6 +47,37 @@ section {
 .content-box-lg {
     padding: 120px 0;
 }
+
 .content-box-md {
-    padding:100px 0;
+    padding: 100px 0;
+}
+
+
+/* =========================================
+                     Cards
+============================================ */
+
+.card-group {
+    display: flex;
+}
+
+.card {
+    width: 33%;
+    margin: 0 1.5% ;
+}
+
+.card-img img{
+    width: 100%;
+    height: auto;
+}
+
+.card-body{
+    padding: 30px;
+    color:#7f7f7f;
+}
+
+.card-body h3{
+    font-size: 24px;
+    color: #333333;
+    margin: 0;
 }
