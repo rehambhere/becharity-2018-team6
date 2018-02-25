@@ -384,6 +384,8 @@ section {
     align-items: center;
 }
 
+.join-list .btn-blue {margin-right: 1.5em;}
+
 .share-icons .icon {
     text-decoration: none;
     color: #fff;
