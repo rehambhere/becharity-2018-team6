@@ -18,7 +18,8 @@ html, body {
 
 body {
     color: #212226;
-    margin:0; padding: 0
+    margin: 0;
+    padding: 0
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -53,35 +54,82 @@ section {
     padding: 100px 0;
 }
 
-
 /* =========================================
             Introduction Styles
 ============================================ */
 
-
-.introduction-content{
+.introduction-content {
     text-align: center;
     width: 66%;
     margin: auto;
-    
 }
 
-.introduction-content h1{
+.introduction-content h1 {
+    margin-top: 0;
     font-size: 36px;
-    font-weight :500;
+    font-weight: 500;
     color: #333333;
 }
 
-.introduction-content h1 span{
+.introduction-content h1 span {
     font-weight: 700;
 }
 
-.introduction-content p{
+.introduction-content p {
     font-size: 18px;
     line-height: 30px;
     color: #7f7f7f;
 }
 
+/* =========================================
+                Couse Styles
+============================================ */
+
+.cause-section {
+    background-color: #f3f3f3;
+    padding-top: 80px;
+}
+
+.cause-container {
+    width: 1170px;
+    margin: auto;
+}
+
+.cause-header {
+    font-size: 34px;
+    color: #333333;
+    text-align: center;
+    margin: 0 auto 30px auto;
+    padding-bottom: 50px;
+    font-weight: 300;
+    position: relative;
+}
+
+.cause-header::before {
+    background: #ff3450;
+    content: "";
+    width: 200px;
+    height: 5px;
+    bottom: 22px;
+    left: calc(50% - 100px);
+    position: absolute;
+}
+
+.cause-header::after {
+    width: 30px;
+    height: 30px;
+    left: calc(50% - 15px);
+    bottom: 10px;
+    border-radius: 50%;
+    background: #ff3450;
+    color: #ffffff;
+    line-height: 14px;
+    content: "";
+    font-family: "FontAwesome";
+    font-size: 14px;
+    position: absolute;
+    line-height: 30px;
+}
 
 /* =========================================
                      Cards
@@ -92,72 +140,72 @@ section {
 }
 
 .card {
-    width: 33%;
-    margin: 0 1.5% ;
+    width: 33.3333%;
+    margin: 0 15px;
     position: relative;
     color: #7f7f7f;
+    background-color: white;
     font-family: "Raleway", sans-serif;
+    font-size: 14px;
 }
 
-.card a{
+.card a {
     text-decoration: none;
     transition: color 0.5s;
 }
 
-.card-body a:link, a:visited{
-    color:#7f7f7f;
+.card-body a:link, a:visited {
+    color: #7f7f7f;
 }
 
-.card-body a:hover{
+.card-body a:hover {
     color: #FF3450;
 }
 
-.card-img img{
+.card-img img {
     width: 100%;
     height: auto;
 }
 
-.card-body{
+.card-body {
     padding: 30px;
     overflow: hidden;
 }
 
-.card-title, .card-title{
+.card-title, .card-title {
     font-size: 24px;
     margin: 0 auto 10px auto;
 }
 
-.card-title a:link, .card-title a:visited{
+.card-title a:link, .card-title a:visited {
     color: #333333;
 }
 
-.card-title a:hover{
+.card-title a:hover {
     color: #FF3450;
 }
 
-.cause-card-content{
+.cause-card-content {
     float: left;
-    margin-right: 30px;
+    margin-right: 25px;
     position: relative;
 }
 
-.cause-card-content div{
+.cause-card-content div {
     margin-bottom: 10px;
-    font-size: 14px;
     font-weight: 700;
 }
 
-.cause-card-graph{
+.cause-card-graph {
     width: 30px;
     float: left;
-    margin: 0 2%;
     position: absolute;
     right: 30px;
     text-align: center;
     color: #ff3450;
 }
 
-.cause-graph-outline{
+.cause-graph-outline {
     background-color: rgba(255, 52, 80, 0.2);
     height: 150px;
     width: 10px;
@@ -166,7 +214,7 @@ section {
     position: relative;
 }
 
-.cause-graph-fill{
+.cause-graph-fill {
     background: #ff3450;
     border-radius: 5px;
     height: 56%;
@@ -175,20 +223,15 @@ section {
     bottom: 0;
 }
 
-.cause-card-content button{
+.cause-card-content button {
     margin-top: 35px;
-    background: #2867de;
 }
-
-.cause-card-content button:hover{
-    background-color: #FF3450;
-}
-
 
 /* =========================================
                     Buttons
 ============================================ */
-.btn{
+
+.btn-general {
     color: #ffffff;
     font-size: 12px;
     font-weight: 700;
@@ -197,13 +240,30 @@ section {
     border-radius: 2px;
     cursor: pointer;
     text-transform: uppercase;
-    transition: background-color 0.5s; 
+    transition: background-color 0.5s;
+    letter-spacing: 0.1;
 }
 
+.btn-blue {
+    background: #2867de;
+}
 
-
+.btn-blue:hover {
+    background: #FF3450;
+}
 
 /*Gallery*/
-.galleryContainer{min-height: 680px; padding: 80px 0; background: #ffffff}
-.gallery{height: 380px}
-.gallery .galleryItem img{height: 380px}
+
+.galleryContainer {
+    min-height: 680px;
+    padding: 80px 0;
+    background: #ffffff
+}
+
+.gallery {
+    height: 380px
+}
+
+.gallery .galleryItem img {
+    height: 380px
+}
