@@ -18,6 +18,7 @@ html, body {
 
 body {
     color: #212226;
+    margin:0; padding: 0
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -81,3 +82,9 @@ section {
     color: #333333;
     margin: 0;
 }
+
+
+/*Gallery*/
+.galleryContainer{min-height: 680px; padding: 80px 0; background: #ffffff}
+.gallery{height: 380px}
+.gallery .galleryItem img{height: 380px}
