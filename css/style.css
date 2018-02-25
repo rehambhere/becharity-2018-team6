@@ -65,6 +65,20 @@ section {
 .card {
     width: 33%;
     margin: 0 1.5% ;
+    position: relative;
+}
+
+.card a{
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.card-body a:link, a:visited{
+    color:#7f7f7f;
+}
+
+.card-body a:hover{
+    color: #FF3450;
 }
 
 .card-img img{
@@ -74,14 +88,62 @@ section {
 
 .card-body{
     padding: 30px;
-    color:#7f7f7f;
+    overflow: hidden;
 }
 
-.card-body h3{
+.card-title, .card-title{
     font-size: 24px;
-    color: #333333;
-    margin: 0;
+    margin: 0 auto 10px auto;
 }
+
+.card-title a:link, .card-title a:visited{
+    color: #333333;
+}
+
+.card-title a:hover{
+    color: #FF3450;
+}
+
+.cause-card-content{
+    float: left;
+    margin-right: 30px;
+    position: relative;
+}
+
+.cause-card-content div{
+    margin-bottom: 5px;
+}
+
+.cause-card-graph{
+    width: 30px;
+    float: left;
+    margin: 0 2%;
+    position: absolute;
+    right: 30px;
+    text-align: center;
+    color: #ff3450;
+}
+
+.cause-graph-outline{
+    background-color: rgba(255, 52, 80, 0.2);
+    height: 150px;
+    width: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.cause-graph-fill{
+    background: #ff3450;
+    border-radius: 5px;
+    height: 56%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+
+
 
 
 /*Gallery*/
