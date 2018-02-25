@@ -55,6 +55,35 @@ section {
 
 
 /* =========================================
+            Introduction Styles
+============================================ */
+
+
+.introduction-content{
+    text-align: center;
+    width: 66%;
+    margin: auto;
+    
+}
+
+.introduction-content h1{
+    font-size: 36px;
+    font-weight :500;
+    color: #333333;
+}
+
+.introduction-content h1 span{
+    font-weight: 700;
+}
+
+.introduction-content p{
+    font-size: 18px;
+    line-height: 30px;
+    color: #7f7f7f;
+}
+
+
+/* =========================================
                      Cards
 ============================================ */
 
