@@ -146,6 +146,30 @@ section {
     bottom: 0;
 }
 
+.cause-card-content button{
+    margin-top: 35px;
+    background: #2867de;
+}
+
+.cause-card-content button:hover{
+    background-color: #FF3450;
+}
+
+
+/* =========================================
+                    Buttons
+============================================ */
+.btn{
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px 15px;
+    border: 0 none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.5s; 
+}
 
 
 
