@@ -66,6 +66,8 @@ section {
     width: 33%;
     margin: 0 1.5% ;
     position: relative;
+    color: #7f7f7f;
+    font-family: "Raleway", sans-serif;
 }
 
 .card a{
@@ -111,7 +113,9 @@ section {
 }
 
 .cause-card-content div{
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
 }
 
 .cause-card-graph{
