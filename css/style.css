@@ -106,7 +106,7 @@ section {
 }
 
 .cause-header::before {
-    background: #ff3450;
+    background-color: #ff3450;
     content: "";
     width: 200px;
     height: 5px;
@@ -121,7 +121,7 @@ section {
     left: calc(50% - 15px);
     bottom: 10px;
     border-radius: 50%;
-    background: #ff3450;
+    background-color: #ff3450;
     color: #ffffff;
     line-height: 14px;
     content: "";
