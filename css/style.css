@@ -265,16 +265,21 @@ section {
     border-radius: 2px;
     cursor: pointer;
     text-transform: uppercase;
-    transition: background-color 0.5s;
+    transition: all 0.5s;
     letter-spacing: -0.2px;
 }
 
-.btn-blue {
+.btn-pink, .btn-white, .btn-blue:hover{
     background: #2867de;
 }
 
-.btn-blue:hover {
+.btn-pink:hover, .btn-blue {
     background: #FF3450;
+}
+
+.btn-white:hover {
+    background: white;
+    color: #2867de;
 }
 
 /* =========================================
