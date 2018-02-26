@@ -11,6 +11,11 @@
         Black:               #000
         blue:               rgba(40, 103, 222, 0.8)
 ============================================ */
+:root {
+    --shadow: 2px 0px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+* {margin: 0; padding: 0; box-sizing: border-box}
 
 html, body {
     height: 100%;
@@ -250,6 +255,175 @@ section {
 
 .btn-blue:hover {
     background: #FF3450;
+}
+
+/* =========================================
+                Events
+============================================ */
+
+.section-title {
+    text-align: center;
+    padding: 1em 0 0.4em;
+    font-weight: 300;
+    font-size: 2.25em;
+}
+
+.section-mark {
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 1.6em;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #ff3450;
+    margin: 0 auto 3em;
+    position: relative;
+}
+
+.section-mark::before,
+.section-mark::after {
+    content: "";
+    display: block;
+    border-bottom: 5px solid #ff3450;
+    position: absolute;
+    top: 12px;
+    width: 75px;
+}
+
+.section-mark::before {
+    left: -70px;
+}
+
+.section-mark::after {
+    left: 25px;
+}
+
+.section-mark > * {
+    font-size: 80%;
+}
+
+.carousel-container {
+    position: relative;
+}
+
+.slides {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.event-img img {
+    height: auto;
+    width: 120%;
+    object-fit: none;
+    object-position: 50% 50%;
+    display: block;
+}
+
+.event-info {
+    background-color: #ff3450;
+    padding: 6em 4em 2em;
+}
+
+.event-title {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.event-info p {
+    color: #f4f4f4;
+    margin: 1em 0 2em;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.875em;
+}
+
+.event-meta {
+    color: #fff;
+    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.5em;
+    font-size: 85%;
+}
+
+.event-meta span:last-child {
+    grid-column: span 2;
+}
+
+.speakers {
+    position: relative;
+    margin: 3em 0;
+}
+
+.speakers-text {
+    color: #ff3450;
+    background-color: #fff;
+    padding: 0.4em 0.8em;
+    font-weight: bold;
+    width: 300px;
+    font-size: 85%;
+}
+
+.speakers-images {
+    position: absolute;
+    top: -10px;
+    left: 120px;
+    width: 180px;
+    display: flex;
+}
+
+.speakers-images img {
+    width: 100%;
+    margin-right: 0.6em;
+    border: 1px solid #fff;
+    box-shadow: var(--shadow);
+}
+
+.join-list {
+    display: flex;
+    align-items: center;
+}
+
+.join-list .btn-blue {margin-right: 1.5em;}
+
+.share-icons .icon {
+    text-decoration: none;
+    color: #fff;
+    border-radius: 1px; 
+    margin: 0.1em;
+    
+}
+
+.owl-controls {
+ 	grid-column: 1 / 3;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.owl-prev, .owl-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.owl-prev {
+    left: 0;
+}
+
+.owl-next {
+	right: 0;
+}
+
+.owl-prev:hover, .owl-next:hover {
+    color: rgb(40, 103, 222);
 }
 
 /*Gallery*/
