@@ -428,8 +428,8 @@ section {
 /*Gallery*/
 
 .galleryContainer {
-    min-height: 680px;
-    padding: 80px 0;
+    min-height: 570px;
+    padding: 60px 0;
     background: #ffffff
 }
 
@@ -439,4 +439,46 @@ section {
 
 .gallery .galleryItem img {
     height: 380px
+}
+
+.owl-theme .owl-nav [class*=owl-]{
+    color: #FFF;
+    font-size: 3em;
+    margin: 5px;
+    padding: 5px 20px;
+    background: transparent
+}
+.owl-theme .owl-nav [class*=owl-]:hover{
+    background: transparent;
+    color:#ff3450
+}
+/**Main titles**/
+.sectionHeader{
+    margin-bottom: 50px; 
+    text-align: center
+}
+.sectionTitle {
+    font-size: 2.5em;
+    font-weight: 300; 
+    padding: 10px; 
+    text-transform: uppercase
+}
+.sectionMark{
+    width: 200px; 
+    height: 5px; 
+    background: #ff3450; 
+    margin: 10px auto; 
+    position: relative
+}
+.sectionMark i{
+    display: block; 
+    width: 30px; 
+    height: 30px; 
+    border-radius: 15px; 
+    background: #ff3450; 
+    position: absolute; 
+    left: calc(50% - 15px); 
+    padding: 7px; 
+    top: -13px;
+    color: #fff
 }
