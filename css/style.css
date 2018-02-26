@@ -76,7 +76,8 @@ section {
 .introduction-content h1 {
     margin: 0 auto 30px;
     font-size: 36px;
-    font-weight: 500;
+    font-weight: 400;
+    font-family: "Roboto", "sans-serif";
     color: #333333;
 }
 
@@ -105,6 +106,7 @@ section {
     text-align: center;
     margin: 0 auto 25px auto;
     font-weight: 300;
+    font-family: "Roboto", "sans-serif";
     position: relative;
 }
 
@@ -172,6 +174,7 @@ section {
     background-color: white;
     font-family: "Raleway", sans-serif;
     font-size: 14px;
+    box-shadow: var(--shadow);
 }
 
 .card a {
@@ -199,7 +202,7 @@ section {
 
 .card-title, .card-title {
     font-size: 24px;
-    margin: 0 auto 10px auto;
+    margin: 0 auto 20px auto;
 }
 
 .card-title a:link, .card-title a:visited {
@@ -218,7 +221,15 @@ section {
 
 .cause-card-content div {
     margin-bottom: 10px;
-    font-weight: 700;
+    font-weight: 500;
+}
+
+.mr-1{
+    margin-right: 4px;
+}
+
+.mr-2{
+    margin-right: 8px;
 }
 
 .cause-card-graph {
