@@ -474,6 +474,41 @@ section {
     color: rgb(40, 103, 222);
 }
 
+/* =========================================
+                Blogs
+============================================ */
+.post-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.meta-right {
+    color: #ff3450;
+}
+
+.post-author {
+    display: flex;
+    padding: 20px 30px;
+    border-top: 1px solid #e7e7e7;
+}
+
+.author-img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+.author-img img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.author-name {
+    align-self: center;
+}
+
+
 /*Gallery*/
 
 .galleryContainer {
