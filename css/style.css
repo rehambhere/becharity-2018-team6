@@ -297,6 +297,12 @@ section {
                 Events
 ============================================ */
 
+.section-title, .event-info > * { 		
+    font-family: "Roboto", sans-serif;		
+}		
+			
+.events .content-box-md {padding-top: 80px; !important}
+
 .section-title {
     text-align: center;
     padding: 1em 0 0.4em;
@@ -372,8 +378,9 @@ section {
 .event-info p {
     color: #f4f4f4;
     margin: 1em 0 2em;
-    font-family: "Roboto", sans-serif;
-    font-size: 0.875em;
+    font-size: 14px;
+    line-height: 22px;
+    opacity: 0.8;
 }
 
 .event-meta {
