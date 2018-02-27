@@ -305,7 +305,7 @@ section {
 
 .section-title {
     text-align: center;
-    padding: 1em 0 0.4em;
+    padding-bottom: 15px;
     font-weight: 300;
     font-size: 2.25em;
 }
@@ -319,7 +319,7 @@ section {
     border-radius: 50%;
     color: #fff;
     background-color: #ff3450;
-    margin: 0 auto 3em;
+    margin: 0 auto 50px;
     position: relative;
 }
 
@@ -367,7 +367,7 @@ section {
 
 .event-info {
     background-color: #ff3450;
-    padding: 6em 4em 2em;
+    padding: 80px 50px;
 }
 
 .event-title {
