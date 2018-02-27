@@ -193,23 +193,32 @@ img{width: 100%}
       color: #ff3450;
   }
 /** END NAV BOTTOM **/
-.shopping{ padding: 28px 0px;}
+.shopping{
+   padding: 28px 0px;
+   padding: 28px 0px;
+position: relative;
+margin-top: 18px;
+ }
 .fa-shopping-bag{
   color: #2867de;
-  font-size: 35px;
-  margin: 5px -48px 0px 13px;
-  display: inline-block;
+      font-size: 35px;
+      margin: 5px -48px 0px 13px;
+      display: inline-block;
+      position: absolute;
+      top: -2px;
 }
 .shopping-price {
   list-style: none;
-  background-color: #ff3450;
-  color: #FFF;
-  width: 61px;
-  height: 22px;
-  padding: 0px -1px 4px 19px;
-  border-radius: 5px;
-  text-align: center;
-  display: inline-block;
+      background-color: #ff3450;
+      color: #FFF;
+      width: 61px;
+      height: 22px;
+
+      border-radius: 5px;
+      text-align: center;
+      display: inline-block;
+      position: relative;
+      line-height:22px;
 }
 .nav-c{margin:10px }
 
