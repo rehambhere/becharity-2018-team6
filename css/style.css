@@ -314,8 +314,9 @@ section {
     display: block;
     width: 30px;
     height: 30px;
-    line-height: 1.6em;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
     color: #fff;
     background-color: #ff3450;
