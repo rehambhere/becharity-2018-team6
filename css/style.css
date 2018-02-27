@@ -356,6 +356,9 @@ section {
     display: block;
 }
 
+#event-img-1 {background: url("http://lineartheme.com/themes/becharity/images/event/event-1.jpg") top center / cover no-repeat}
+#event-img-1 {background: url("http://lineartheme.com/themes/becharity/images/event/event-2.jpg") top center / cover no-repeat}
+
 .event-info {
     background-color: #ff3450;
     padding: 6em 4em 2em;
