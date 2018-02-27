@@ -301,7 +301,7 @@ section {
     font-family: "Roboto", sans-serif;		
 }		
 			
-.events .content-box-md {padding-top: 80px; !important}
+.events.content-box-md {padding-top: 80px !important;}
 
 .section-title {
     text-align: center;
