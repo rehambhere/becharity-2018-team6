@@ -24,3 +24,32 @@ $(function () {
     });
 });
 
+$(function(){
+  $('.counter').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 2000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
+// grab an element
+var myElement = document.querySelector("header");
+// construct an instance of Headroom, passing the element
+var headroom  = new Headroom(myElement);
+// initialise
+headroom.init();
+
+$('.owl-carousel').owlCarousel({
+    items:1,
+    loop:true,
+    animateOut: 'fadeOut',
+    animatein: 'fadeOut',
+    smartSpeed:450,
+    dots:true
+});
+
+})
