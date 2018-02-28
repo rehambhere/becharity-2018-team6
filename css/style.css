@@ -515,16 +515,11 @@ section {
 /*Gallery*/
 
 .galleryContainer {
-    min-height: 570px;
-    padding: 60px 0;
+    padding: 60px 0 0 0;
     background: #ffffff
 }
 
-.gallery {
-    height: 380px
-}
-
-.gallery .galleryItem img {
+#gallery,  #gallery img{
     height: 380px
 }
 
@@ -545,7 +540,8 @@ section {
     text-align: center
 }
 .sectionTitle {
-    font-size: 2.5em;
+    font-family: "Roboto", "sans-serif";
+    font-size: 2em;
     font-weight: 300; 
     padding: 10px; 
     text-transform: uppercase
@@ -568,4 +564,23 @@ section {
     padding: 7px; 
     top: -13px;
     color: #fff
+}
+
+/*Our Clients*/
+.clinetContainer{
+    padding: 60px;
+    text-align: center;
+    background-color: #f3f3f3
+}
+.clientListItem{
+    display: inline-block;
+    width:150px;
+    height: 100px;
+    background: #fff;
+    margin: 10px 15px;
+    padding: 0 25px
+}
+.clientListItem:hover img{
+    transition: .3s ease-in-out;
+    transform: scale(1.15);
 }
