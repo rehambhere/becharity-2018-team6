@@ -95,12 +95,12 @@ section {
                 Couse Styles
 ============================================ */
 
-.cause-section {
+.gray-section {
     background-color: #f3f3f3;
     padding-top: 80px;
 }
 
-.cause-header {
+.section-header {
     font-size: 34px;
     color: #333333;
     text-align: center;
@@ -110,7 +110,7 @@ section {
     position: relative;
 }
 
-.cause-section-mark{
+.section-icon{
     background-color: #ff3450;
     width: 170px;
     height: 5px;
@@ -132,7 +132,7 @@ section {
     top: -12.5px;
 }
 
-/*.cause-header::before {
+/*.section-header::before {
     background-color: #ff3450;
     content: "";
     width: 200px;
@@ -142,7 +142,7 @@ section {
     position: absolute;
 }
 
-.cause-header::after {
+.section-header::after {
     width: 30px;
     height: 30px;
     left: calc(50% - 15px);
@@ -213,13 +213,13 @@ section {
     color: #FF3450;
 }
 
-.cause-card-content {
+.card-content {
     float: left;
     margin-right: 25px;
     position: relative;
 }
 
-.cause-card-content div {
+.card-content div {
     margin-bottom: 10px;
     font-weight: 500;
 }
@@ -259,7 +259,7 @@ section {
     bottom: 0;
 }
 
-.cause-card-content button {
+.card-content button {
     margin-top: 35px;
 }
 
