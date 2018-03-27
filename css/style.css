@@ -24,7 +24,9 @@ html, body {
 body {
     color: #212226;
     margin: 0;
-    padding: 0
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -32,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 13px;
     font-weight: 400;
     line-height: 24px;
@@ -46,7 +48,103 @@ section {
     background: #fff;
     overflow: hidden;
 }
+.text-center{
+  text-align: center;
+}
+.img-responsive
+{
+  display: block;
+max-width: 100%;
+height: auto;
+}
+ul li
+{
+    list-style: none;
 
+}
+a{
+    text-decoration: none;
+}
+
+.list-inline>li
+{
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+/* =========================================
+            preloade
+============================================ */
+#preloader
+{
+    background-color: #FF3450;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+#status
+{
+    background-image: url("../image/preloade/Spin-1s-200px.gif");
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    background-repeat: no-repeat;
+    left:50%;
+    top:50%;
+    margin-top: -60px;
+    margin-left: -60px;
+
+}
+
+/* =========================================
+              owl carousal
+============================================ */
+
+.owl-theme .owl-nav [class*=owl-]{
+    color: #FFF;
+    font-size: 3em;
+    margin: 5px;
+    padding: 5px 20px;
+    background: transparent
+}
+.owl-theme .owl-nav [class*=owl-]:hover{
+    background: transparent;
+    color:#ff3450;
+}
+
+.owl-prev, .owl-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.owl-prev {
+    left: 0;
+}
+
+.owl-next {
+	right: 0;
+}
+#testemonial.owl-theme .owl-nav [class*=owl-]
+{
+  color:#2867DE !important;
+}
+#testemonial.owl-theme .owl-nav [class*=owl-]:hover
+{
+    color:#ff3450 !important;
+
+}
 /* =========================================
                 Content Boxes
 ============================================ */
@@ -193,8 +291,19 @@ section {
 .card-img img {
     width: 100%;
     height: auto;
+    transition: all 0.5s ease-in-out;
 }
 
+
+.card >div
+{
+    overflow: hidden;
+
+}
+.card-img img:hover
+{
+    transform: scale(1.2);
+}
 .card-body {
     padding: 30px;
     overflow: hidden;
@@ -253,7 +362,7 @@ section {
 .cause-graph-fill {
     background: #ff3450;
     border-radius: 5px;
-    height: 56%;
+    height: 0%;
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -292,18 +401,45 @@ section {
     background: white;
     color: #2867de;
 }
+.btn-searchl
+{
+  padding: 10px 40px;
+  background: #FF3450;
+}
+#scroll-top
+{
+    background: rgba(255, 52, 80, 1);
+    border-radius: 50%;
+    bottom: 20px;
+    color: #fff;
+    line-height: 22px;
+    padding: 5px 10px;
+    right: 20px;
+    box-shadow: var(--shadow);
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+}
+
+#scroll-top .fa {
+    color: white;
+    cursor: pointer
+}
+
 
 /* =========================================
                 Events
 ============================================ */
 
-.section-title, .event-info > * { 		
-    font-family: "Roboto", sans-serif;		
-}		
-			
+.section-title, .event-info > * {
+    font-family: "Roboto", sans-serif;
+}
+
 .events.content-box-md {
     padding-top: 80px !important;
-    padding-bottom: 0 !important; 
+    padding-bottom: 0 !important;
 }
 
 .section-title {
@@ -436,13 +572,16 @@ section {
 }
 
 .join-list .btn-white {margin-right: 1.5em;}
-
+.share-icons .fab
+{
+    color: white !important;
+}
 .share-icons .icon {
     text-decoration: none;
-    color: #fff;
-    border-radius: 1px; 
+    color: #fff !important;
+    border-radius: 1px;
     margin: 0.1em;
-    
+
 }
 
 .owl-controls {
@@ -451,27 +590,6 @@ section {
 	grid-template-columns: 1fr 1fr;
 }
 
-.owl-prev, .owl-next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 3em;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-}
-
-.owl-prev {
-    left: 0;
-}
-
-.owl-next {
-	right: 0;
-}
 
 .owl-prev:hover, .owl-next:hover {
     color: rgb(40, 103, 222);
@@ -523,45 +641,34 @@ section {
     height: 380px
 }
 
-.owl-theme .owl-nav [class*=owl-]{
-    color: #FFF;
-    font-size: 3em;
-    margin: 5px;
-    padding: 5px 20px;
-    background: transparent
-}
-.owl-theme .owl-nav [class*=owl-]:hover{
-    background: transparent;
-    color:#ff3450
-}
 /**Main titles**/
 .sectionHeader{
-    margin-bottom: 50px; 
+    margin-bottom: 50px;
     text-align: center
 }
 .sectionTitle {
     font-family: "Roboto", "sans-serif";
     font-size: 2em;
-    font-weight: 300; 
-    padding: 10px; 
+    font-weight: 300;
+    padding: 10px;
     text-transform: uppercase
 }
 .sectionMark{
-    width: 200px; 
-    height: 5px; 
-    background: #ff3450; 
-    margin: 10px auto; 
+    width: 200px;
+    height: 5px;
+    background: #ff3450;
+    margin: 10px auto;
     position: relative
 }
 .sectionMark i{
-    display: block; 
-    width: 30px; 
-    height: 30px; 
-    border-radius: 15px; 
-    background: #ff3450; 
-    position: absolute; 
-    left: calc(50% - 15px); 
-    padding: 7px; 
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background: #ff3450;
+    position: absolute;
+    left: calc(50% - 15px);
+    padding: 7px;
     top: -13px;
     color: #fff
 }
@@ -616,3 +723,195 @@ section {
 .overlay p{
     font-size: 1em;
 }
+.testemonials-carousal .test
+{
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.testemonials-carousal .test img
+{
+  border-radius: 50%;
+  height: 100px;
+  margin: auto auto 15px;
+  width: 100px
+}
+
+.testemonials-carousal h1
+{
+    color: #333333;
+    font-weight: 400;
+    margin-bottom: 25px;
+    margin-top: 0;
+    text-align: center
+}
+.testemonials-carousal p
+{
+    margin-bottom: 47px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+    color: #7f7f7f;
+}
+.testemonials .section-mark
+{
+    margin-bottom: 30px !important;
+}
+.testimonial-client
+{
+    font-size: 12px;
+    margin-bottom: 15px;
+    color: #7f7f7f;
+}
+.testimonial-client span
+{
+    display: block;
+    line-height:2;
+}
+/*footer*/
+.footer-newsletter
+{
+ background: #2867de;
+ padding:50px 0;
+}
+.footer-box
+{
+  display: flex;
+
+}
+.footer-box .title-box
+{
+  flex-grow:1;
+}
+.title-box h2
+{
+  color: white;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+.title-box p
+{
+  color: #ffffff;
+margin: 0;
+opacity: 0.8;
+font-family: 'Roboto', sans-serif;
+font-size: 14px;
+line-height: 22px;
+
+}
+.footer-box .search-box
+{
+  flex-grow:11;
+  margin-top:15px;
+
+
+}
+
+.footer-box .search-box input
+{
+  width: 80%;
+  height: 33px;
+  padding: 6px 12px;
+font-size: 14px;
+line-height: 1.42857143;
+color: #555;
+background-color: #fff;
+background-image: none;
+border-width: 0;
+    margin-right:20px;
+}
+.footer-content
+{
+background:#1f1f1f;
+color:#7f7f7f;
+
+}
+.footer-content.content-box-md
+{
+    padding-bottom: 50px !important;
+}
+.logo-footer img
+{
+  margin-top: 20px;
+max-width: 184px;
+padding-bottom: 10px;
+}
+.footer-widget-box
+{
+display: flex;
+}
+.footer-widget
+{
+    flex:1;
+    padding-right:30px;
+}
+.footer-widget p
+{
+  font-size: 14px;
+    line-height: 22px;
+    padding-bottom: 10px;
+}
+.footer-map
+{
+    margin-top: 30px;
+}
+.footer-map a
+{
+    font-weight: bold;
+    padding-top: 40px;
+    color: #7f7f7f;
+    font-size: 12px;
+    transition: all 0.3s ease;
+
+
+}
+.footer-map a:hover
+{
+    color: #ff3450;
+}
+
+.footer-title
+{
+  color: #ffffff;
+margin-bottom:20px;
+margin-top: 15px;
+
+font-size: 24px;
+
+}
+.footer-widget ul li
+{
+    padding-bottom: 7px;
+
+
+}
+.footer-widget ul li a
+{
+    color: #7f7f7f;
+    transition: all 0.3s ease;
+}
+.footer-widget ul li a:hover
+{
+   color: #ff3450;
+}
+.social-footer
+{
+    background: #1c1c1c;
+    padding: 20px 0;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+.social-footer i
+{
+    width: 42px;
+    height: 42px;
+    background: #161616;
+    border-radius: 2px;
+    line-height: 42px;
+    color: white
+}
+.copy-write span a
+{
+    color:#7f7f7f;
+}
+
